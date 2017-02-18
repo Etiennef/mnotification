@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mnotification\n"
+"POT-Creation-Date: 2017-02-18 15:51+0100\n"
+"PO-Revision-Date: 2017-02-18 16:12+0100\n"
+"Last-Translator: Etienne <etienne-github@outlook.fr>\n"
+"Language-Team: Etiennef <etienne-github@outlook.fr>\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../.\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __:1,2t\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: hook.php:26
+msgid "event.change_due_date"
+msgstr "Due date change"
+
+#: inc/config.class.php:16
+msgid "config.filtered_target.title"
+msgstr "Configuration for 'filtered' notification targets"
+
+#: inc/config.class.php:22
+msgid "config.filtered_target.active"
+msgstr "Activate 'filtered' notificaiton targets"
+
+#: inc/config.class.php:27
+msgid "config.filtered_target.active.tootlip"
+msgstr ""
+"Activate this option to get access to new notification targets usable in notification configuration if you need more subtle groups than what you get with raw GLPI. Main objective is to allow sending different notificaiton to people having different rôles on a ticket, and that even if they have several rôles on the same ticket.\n"
+"If you want to unactivate this, or uninstall the plugin, you should reconfigure your notifications before."
+
+#: inc/config.class.php:34 inc/filteredtarget.class.php:28
+msgid "targets.filtered_user_requester"
+msgstr "Filtered named requesters"
+
+#: inc/config.class.php:36 inc/config.class.php:52 inc/config.class.php:102
+#: inc/config.class.php:118 inc/config.class.php:134
+msgid "config.filtered_target.not_user_observer"
+msgstr "Remove named observers"
+
+#: inc/config.class.php:37 inc/config.class.php:53 inc/config.class.php:103
+#: inc/config.class.php:119 inc/config.class.php:135
+msgid "config.filtered_target.not_group_observers"
+msgstr "Remove people in observer groups"
+
+#: inc/config.class.php:38 inc/config.class.php:54 inc/config.class.php:70
+#: inc/config.class.php:86
+msgid "config.filtered_target.not_user_technician"
+msgstr "Remove named assigned technicians"
+
+#: inc/config.class.php:39 inc/config.class.php:55 inc/config.class.php:71
+#: inc/config.class.php:87
+msgid "config.filtered_target.not_group_technicians"
+msgstr "Remove people in assigned groups"
+
+#: inc/config.class.php:50 inc/filteredtarget.class.php:24
+msgid "targets.filtered_group_requesters"
+msgstr "Filtered requester groups"
+
+#: inc/config.class.php:66 inc/filteredtarget.class.php:29
+msgid "targets.filtered_user_observer"
+msgstr "Filtered named observers"
+
+#: inc/config.class.php:68 inc/config.class.php:84 inc/config.class.php:100
+#: inc/config.class.php:116 inc/config.class.php:132
+msgid "config.filtered_target.not_user_requester"
+msgstr "Remove named requesters"
+
+#: inc/config.class.php:69 inc/config.class.php:85 inc/config.class.php:101
+#: inc/config.class.php:117 inc/config.class.php:133
+msgid "config.filtered_target.not_group_requesters"
+msgstr "Remove people in requester groups"
+
+#: inc/config.class.php:82 inc/filteredtarget.class.php:25
+msgid "targets.filtered_group_observers"
+msgstr "Filtered observer groups"
+
+#: inc/config.class.php:98 inc/filteredtarget.class.php:30
+msgid "targets.filtered_user_technician"
+msgstr "Filtered assigned technicians"
+
+#: inc/config.class.php:114 inc/filteredtarget.class.php:26
+msgid "targets.filtered_group_technicians"
+msgstr "Filtered assigned groups"
+
+#: inc/config.class.php:130 inc/filteredtarget.class.php:27
+msgid "targets.filtered_group_techifnotech"
+msgstr "Filtered assigned groups if no named assigned technician"
+
+#: inc/config.class.php:147
+msgid "config.change_duedate.title"
+msgstr "Configuration for due date change notificaiton"
+
+#: inc/config.class.php:153
+msgid "config.change_duedate.active"
+msgstr "Activate notification"
+
+#: inc/config.class.php:158
+msgid "config.change_duedate.active.tootlip"
+msgstr ""
+"Activating this notification add an event on which you can plug a cumston notification. It sort of is a sub-event from the ticket update event, and is therefore usefull if you want a notification on deu date change, but not on every update.\n"
+"This also adds three notification datas : ##mnotification.subevent## (set, remove or change), ##mnotification.prev_duedate## and ##mnotification.new_duedate##."
+
+#: inc/config.class.php:165
+msgid "config.change_duedate.mindiff"
+msgstr "Minimal due date change to trigger a notification"
+
+#: inc/config.class.php:166
+msgid "config.change_duedate.mindiff.tootlip"
+msgstr "Changes lower than this value (in seconds) will not trigger a notification. It is highly recommanded to set this at 60 or more, as the way the ticket update form works will make false positive otherwise. Anyway, who changes due date for less than a minute?"
+
+#: inc/config.class.php:173
+msgid "config.change_duedate.dateformat"
+msgstr "Format used for date in notificaiton"
+
+#: inc/config.class.php:174
+msgid "config.change_duedate.format.tootlip"
+msgstr "Due date in plugin specific fields will be formated with this value. Must be a valid php Date->format string ('Y-m-d h:i:s' for example). Goal is to avoid to notify a very precise date when due date is mabye just intended to be a day."
+
+#: inc/filteredtarget.class.php:23
+msgid "targets.group_techifnotech"
+msgstr "Assigned groups if no named assigned technician"
+
+#: setup.php:24
+msgid "setup.wrongversion"
+msgstr "This plugin is only compatible with GLPI 0.84"
+
+#: setup.php:30 setup.php:35
+msgid "setup.require.configmanager"
+msgstr "This plugin requires Configmanager 1.x.x"

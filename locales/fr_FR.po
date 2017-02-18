@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mnotification\n"
+"POT-Creation-Date: 2017-02-18 16:28+0100\n"
+"PO-Revision-Date: 2017-02-18 16:28+0100\n"
+"Last-Translator: Etienne <etienne-github@outlook.fr>\n"
+"Language-Team: Etienne <etienne-github@outlook.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../.\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __:1,2t\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: hook.php:26
+msgid "event.change_due_date"
+msgstr "Changement de la date d'échéance"
+
+#: inc/config.class.php:16
+msgid "config.filtered_target.title"
+msgstr "Configuration des cibles de notification 'filtrées'"
+
+#: inc/config.class.php:22
+msgid "config.filtered_target.active"
+msgstr "Activer les cibles de notifications filtrées"
+
+#: inc/config.class.php:27
+msgid "config.filtered_target.active.tootlip"
+msgstr ""
+"Activer cette option donne accès à des nouvelles cibles de notification "
+"pouvant être utilisées dans le paramétrage des notifications si on souhaite "
+"plus de finesse qu'avec GLPI brut. L'objectif primaire est de permettre de "
+"mieux adapter les notifications envoyées en fonction du (des) rôle(s) "
+"joué(s) sur le ticket.\n"
+"Attention, si on désactive cette option, il faut changer le réglage des "
+"notifications afin de ne plus les faire utiliser ces groupes (en fait, il "
+"vaut même mieux re-paramétrer les notifications AVANT de désactiver cette "
+"fonctionnalité)"
+
+#: inc/config.class.php:34 inc/filteredtarget.class.php:28
+msgid "targets.filtered_user_requester"
+msgstr "Demandeurs nominatifs filtrés"
+
+#: inc/config.class.php:36 inc/config.class.php:52 inc/config.class.php:102
+#: inc/config.class.php:118 inc/config.class.php:134
+msgid "config.filtered_target.not_user_observer"
+msgstr "Retirer les personnes placées en observateur"
+
+#: inc/config.class.php:37 inc/config.class.php:53 inc/config.class.php:103
+#: inc/config.class.php:119 inc/config.class.php:135
+msgid "config.filtered_target.not_group_observers"
+msgstr "Retirer les membres de groupes placés en observateurs"
+
+#: inc/config.class.php:38 inc/config.class.php:54 inc/config.class.php:70
+#: inc/config.class.php:86
+msgid "config.filtered_target.not_user_technician"
+msgstr "Retirer les techniciens auxquels le ticket est nominativement attribué"
+
+#: inc/config.class.php:39 inc/config.class.php:55 inc/config.class.php:71
+#: inc/config.class.php:87
+msgid "config.filtered_target.not_group_technicians"
+msgstr "Retirer les membres de groupes auxquels le ticket est attribué"
+
+#: inc/config.class.php:50 inc/filteredtarget.class.php:24
+msgid "targets.filtered_group_requesters"
+msgstr "Groupes utilisateurs filtrés"
+
+#: inc/config.class.php:66 inc/filteredtarget.class.php:29
+msgid "targets.filtered_user_observer"
+msgstr "Observateurs nominatifs filtrés"
+
+#: inc/config.class.php:68 inc/config.class.php:84 inc/config.class.php:100
+#: inc/config.class.php:116 inc/config.class.php:132
+msgid "config.filtered_target.not_user_requester"
+msgstr "Retirer les demandeurs"
+
+#: inc/config.class.php:69 inc/config.class.php:85 inc/config.class.php:101
+#: inc/config.class.php:117 inc/config.class.php:133
+msgid "config.filtered_target.not_group_requesters"
+msgstr "Retirer les membres des groupes demandeurs"
+
+#: inc/config.class.php:82 inc/filteredtarget.class.php:25
+msgid "targets.filtered_group_observers"
+msgstr "Groupe observateurs filtrés"
+
+#: inc/config.class.php:98 inc/filteredtarget.class.php:30
+msgid "targets.filtered_user_technician"
+msgstr "Attribués à filtrés"
+
+#: inc/config.class.php:114 inc/filteredtarget.class.php:26
+msgid "targets.filtered_group_technicians"
+msgstr "Groupes attribués à filtrés"
+
+#: inc/config.class.php:130 inc/filteredtarget.class.php:27
+msgid "targets.filtered_group_techifnotech"
+msgstr "Groupes attribués à si non pris en charge nominativement filtrés"
+
+#: inc/config.class.php:147
+msgid "config.change_duedate.title"
+msgstr "Notification sur la date d'échéance"
+
+#: inc/config.class.php:153
+msgid "config.change_duedate.active"
+msgstr "Activer la notification sur la date d'échéance"
+
+#: inc/config.class.php:158
+msgid "config.change_duedate.active.tootlip"
+msgstr ""
+"En activant cette option, vous ajoutez un évènement de notification. Il "
+"s'agit d'un 'sous-évènement' de l'évènement de mise à jour du ticket (il est "
+"donc utile si vous ne voulez pas notifier toutes les mises à jours, mais "
+"seulement le changement de la date d'échéance).\n"
+"Activer cette notification ajoute trois champs accessible depuis les modèles "
+"de notifications : ##mnotification.subevent## (set, remove ou change), "
+"##mnotification.prev_duedate## et ##mnotification.new_duedate##."
+
+#: inc/config.class.php:165
+msgid "config.change_duedate.mindiff"
+msgstr "Délai minimal de changement pour déclencher une notification"
+
+#: inc/config.class.php:166
+msgid "config.change_duedate.mindiff.tootlip"
+msgstr ""
+"Les changements de date d'échéance inférieurs à ce délai (en secondes) ne "
+"déclencheront pas de notifications. Il est vivement recommandé de choisir un "
+"délai d'au moins une minute (la façon dont le formulaire d'édition de "
+"tickets gère les secondes est étrange, ça fait plein de faux positifs). De "
+"toute façon, qui modifie une date d'échéance pour moins d'une minute?"
+
+#: inc/config.class.php:173
+msgid "config.change_duedate.dateformat"
+msgstr "Format de la date dans les notifications"
+
+#: inc/config.class.php:174
+msgid "config.change_duedate.format.tootlip"
+msgstr ""
+"Le format dans lequel sera mis la date d'échéance dans les champs "
+"spécifiques au plugin. Ce doit être un format valide pour Date.format en php "
+"('Y-m-d h:i:s' par exemple). Utile si les dates d'échéances sont fixées au "
+"jour prêt."
+
+#: inc/filteredtarget.class.php:23
+msgid "targets.group_techifnotech"
+msgstr "Groupes attribués à si non pris en charge nominativement"
+
+#: setup.php:24
+msgid "setup.wrongversion"
+msgstr "Ce plugin n'est compatible qu'avec la version 0.84 de GLPI"
+
+#: setup.php:30 setup.php:35
+msgid "setup.require.configmanager"
+msgstr "Ce plugin requiert Configmanager en version 1.x.x pour fonctionner."
