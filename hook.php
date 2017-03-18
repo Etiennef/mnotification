@@ -83,7 +83,7 @@ function plugin_mnotification_add_datas(NotificationTargetTicket $target) {
 function plugin_mnotification_pre_item_update_ticket($ticket) {
     $conf = PluginMnotificationConfig::getConfigValues();
 
-    if ($conf['change_duedate_event_active'] && $ticket instanceof Ticket) {
+    if ($conf['change_duedate_event_active'] && isset($ticket->input['due_date']) && $ticket instanceof Ticket) {
         $current = $ticket->getField('due_date') === null ? 'NULL' : $ticket->getField('due_date');
         $new = $ticket->input['due_date'];
 

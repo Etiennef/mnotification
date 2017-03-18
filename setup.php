@@ -7,7 +7,7 @@
 function plugin_version_mnotification() {
     return array(
         'name' => "Mnotification",
-        'version' => '0.84+1.0.0',
+        'version' => '0.84+1.0.1',
         'author' => 'Etiennef',
         'license' => 'GPLv2+',
         'homepage' => 'https://github.com/Etiennef/mnotification',
